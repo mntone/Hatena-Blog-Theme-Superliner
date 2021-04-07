@@ -54,4 +54,4 @@ superliner/
 
 # LICENSE
 
-under [MIT license](https://raw.githubusercontent.com/mntone/LICENSE.txt)
+under [MIT license](https://raw.githubusercontent.com/mntone/Hatena-Blog-Theme-Superliner/master/LICENSE.txt)
