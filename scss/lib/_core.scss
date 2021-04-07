@@ -63,6 +63,15 @@ h4 { font-size: 1.25em; }
 h5 { font-size: 1.125em; }
 h6 { font-size: 1.0625em; }
 
+.text-primary { color: $text--light; }
+.text-secondary { color: $secondary--light; }
+.text-tertiary { color: $tertiary--light; }
+@media #{$mq-dk} {
+    .text-primary { color: $text--dark; }
+    .text-secondary { color: $secondary--dark; }
+    .text-tertiary { color: $tertiary--dark; }
+}
+
 /* ヘッダ（グローバルヘッダ）
   グローバルヘッダの中はiframeですが、
   #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
