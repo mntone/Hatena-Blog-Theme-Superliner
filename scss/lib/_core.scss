@@ -380,14 +380,16 @@ h6 { font-size: 1.0625em; }
         }
     }
 
-    blockquote {
-        margin: 0 0 10px;
-        border: 1px solid $separator--light;
+    blockquote, pre {
+        margin: 0 0 1rem;
+        border: 0 none transparent;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: $secondary-background--light;
         @media #{$mq-dk} {
-            border-color: $separator--dark;
+            background-color: $secondary-background--dark;
         }
-        border-radius: 2px;
-        padding: 20px;
+        font-size: .9375rem;
 
         p:first-child {
             margin-top: 0;
@@ -401,12 +403,6 @@ h6 { font-size: 1.0625em; }
         font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
     }
     pre {
-        border: 0 none transparent;
-        padding: 10px;
-        background-color: $secondary-background--light;
-        @media #{$mq-dk} {
-            background-color: $secondary-background--dark;
-        }
         font-size: .8125rem;
         line-height: 1.3;
         white-space: pre-wrap;
@@ -428,7 +424,7 @@ h6 { font-size: 1.0625em; }
         }
     }
     code {
-        font-size: .9375rem;
+        font-size: .9375em;
         margin: 0;
         border: 0 none transparent;
         border-radius: 2px;
@@ -458,6 +454,17 @@ h6 { font-size: 1.0625em; }
         width: fit-content;
         font-size: .875rem;
     }
+}
+.hatena-asin-detail, .itunes-embed {
+    margin: 0 0 1rem;
+    border: 0 none transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: $secondary-background--light;
+    @media #{$mq-dk} {
+        background-color: $secondary-background--dark;
+    }
+    font-size: .9375rem;
 }
 
 /* 記事下 */
