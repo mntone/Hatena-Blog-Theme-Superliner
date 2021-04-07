@@ -261,6 +261,9 @@ h6 { font-size: 1.0625em; }
             }
         }
         transition: background-color .22s cubic-bezier(.1, .9, .2, 1);
+        @media #{$mq-rm} {
+            transition: none;
+        }
         user-select: none;
     }
     &::after {
@@ -617,6 +620,9 @@ h6 { font-size: 1.0625em; }
                 }
             }
             transition: background-color .22s cubic-bezier(.1, .9, .2, 1);
+            @media #{$mq-rm} {
+                transition: none;
+            }
         }
 
         .urllist-image {
