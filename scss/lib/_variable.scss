@@ -1,0 +1,53 @@
+// Variables
+
+// Background color
+$background--light: #fff;
+$background--dark: #000;
+$secondary-background--light: #f2f2f7;
+$secondary-background--dark: #1c1c1e;
+$blur-background--light: rgba(247, 247, 247, .82);
+$blur-background--dark: #000;
+$blur-opaque-background--light: rgba(247, 247, 247, .95);
+$blur-opaque-background--dark: #000;
+$bg-light: #f5f5f5;
+
+// text color
+$text--light: #000;
+$text--dark: #fff;
+$secondary--light: rgba(60, 60, 67, .6);
+$secondary--dark: rgba(235, 235, 245, .6);
+$text-light: #999;
+
+// link
+$link--light: #1488cc;
+$link--dark: #42adec;
+$hover: darken($link--light, 10%);
+
+// tooltip
+$tooltip-background--light: rgba(0, 0, 0, .6);
+$tooltip-background-hover--light: #000;
+$tooltip-background--dark: rgba(255, 255, 255, .6);
+$tooltip-background-hover--dark: #fff;
+
+// separator
+$separator--light: rgba(60, 60, 67, .29);
+$separator--dark: rgba(84, 88, 88, .6);
+
+// border
+$border--light: #ddd;
+$border--dark: #222;
+$border-top--light: #111;
+$border-bottom--light: #ccc;
+$border-top--dark: #eee;
+$border-bottom--dark: #333;
+
+// button
+$btn: #fff;
+$btn-hover: #f5f5f5;
+
+// Media Queries
+$mq-xs: "(max-width: 480px)";
+$mq-sm: "(min-width: 800px)";
+$mq-md: "(min-width: 992px)";
+$mq-lg: "(min-width: 1200px)";
+$mq-dk: "(prefers-color-scheme: dark)";

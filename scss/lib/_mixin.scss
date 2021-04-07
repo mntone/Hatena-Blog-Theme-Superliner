@@ -1,0 +1,32 @@
+// Mix-ins
+
+@mixin header {
+    border-top: 1px solid $border-top--light;
+    border-bottom: 1px solid $border-bottom--light;
+    @media #{$mq-dk} {
+        border-top-color: $border-top--dark;
+        border-bottom-color: $border-bottom--dark;
+    }
+    padding: .667em 0;
+}
+
+@mixin button {
+    border: 1px solid $separator--light;
+    border-radius: 4px;
+    padding: .6em 1em;
+    color: $text--light;
+    &:hover {
+        color: $text--light;
+        background-color: $separator--light;
+    }
+    @media #{$mq-dk} {
+        border-color: $separator--dark;
+        color: $text--dark;
+        &:hover {
+            color: $text--dark;
+            background-color: $separator--dark;
+        }
+    }
+    transition: background-color .22s cubic-bezier(.1, .9, .2, 1);
+    user-select: none;
+}
