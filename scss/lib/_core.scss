@@ -567,7 +567,7 @@ h6 { font-size: 1.0625em; }
     }
 }
 .read-more-comments {
-    font-size: 1rem;
+    font-size: .875rem;
     line-height: 1;
 
     a {
@@ -576,6 +576,8 @@ h6 { font-size: 1.0625em; }
     }
 }
 .leave-comment-title {
+    font-size: .875rem;
+    line-height: 1;
     @include button();
 }
 
