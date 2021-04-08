@@ -25,7 +25,7 @@ a {
     @media #{$mq-dk} {
         color: $link--dark;
         &:hover {
-            color: darken($link--dark, 10%);
+            color: lighten($link--dark, 10%);
         }
     }
 
