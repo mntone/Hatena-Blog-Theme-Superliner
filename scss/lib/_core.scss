@@ -167,6 +167,8 @@ h6 { font-size: 1.0625em; }
 #title {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
     a {
         color: $text--light;
         background: linear-gradient(to right, #2b32b2, #1488cc);
@@ -186,8 +188,8 @@ h6 { font-size: 1.0625em; }
     @media #{$mq-dk} {
         color: $secondary--dark;
     }
-    font-weight: normal;
     font-size: .875rem;
+    font-weight: 400;
 }
 
 /* ヘッダ画像を設定したとき */
