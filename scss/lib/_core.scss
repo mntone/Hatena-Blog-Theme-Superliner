@@ -141,6 +141,20 @@ h6 { font-size: 1.0625em; }
         width: calc(100% - 880px);
     }
 }
+#box2-inner {
+    column-gap: 16px;
+    column-fill: auto;
+}
+@media (min-width: 505px) and (max-width: 740px) {
+    #box2-inner {
+        column-count: 2;
+    }
+}
+@media (min-width: 741px) and (max-width: 839px) {
+    #box2-inner {
+        column-count: 3;
+    }
+}
 
 /* ヘッダ */
 #blog-title {
@@ -593,6 +607,7 @@ h6 { font-size: 1.0625em; }
     box-sizing: border-box;
     margin-bottom: 2rem;
     font-size: .875rem;
+    break-inside: avoid-column;
     user-select: none;
 }
 .hatena-module-title {
