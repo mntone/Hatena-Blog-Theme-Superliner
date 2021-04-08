@@ -884,8 +884,16 @@ h6 { font-size: 1.0625em; }
 
 /* footer */
 #footer {
-    margin-top: 2em;
-    padding-bottom: 2rem;
+    margin: 24px auto;
+    padding: 0 16px 24px;
+    @media #{$mq-sm} {
+        margin-top: 32px;
+        padding: 0 20px 32px;
+    }
+    @media #{$mq-md} {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     color: $secondary--light;
     @media #{$mq-dk} {
         color: $secondary--dark;
