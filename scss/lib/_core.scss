@@ -444,8 +444,7 @@ h6 { font-size: 1.0625em; }
         }
     }
     hr {
-        width: 80%;
-        margin: 2em auto;
+        margin: 1em 0;
         border: 0 none transparent;
         border-top: 1px solid $separator--light;
         @media #{$mq-dk} {
