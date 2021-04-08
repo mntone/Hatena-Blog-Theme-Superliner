@@ -526,6 +526,14 @@ h6 { font-size: 1.0625em; }
         }
         text-align: left;
     }
+    .hatena-id-icon {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        border-radius: 4px;
+        width: 48px !important;
+        height: 48px !important;
+    }
 }
 .comment {
     list-style: none;
@@ -535,14 +543,6 @@ h6 { font-size: 1.0625em; }
 .comment-user-name {
     margin: 0 0 .4em 0;
     font-weight: bold;
-}
-.hatena-id-icon {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    border-radius: 4px;
-    width: 48px !important;
-    height: 48px !important;
 }
 .comment-content {
     margin: 0 0 .4em 0;
@@ -665,7 +665,8 @@ h6 { font-size: 1.0625em; }
     font-size: .8125rem;
 }
 
-/* Related module */
+/* Comment, Related module */
+.recent-comments li,
 .related-entries li,
 .entries-access-ranking li {
     padding-bottom: 1rem;
@@ -693,6 +694,30 @@ h6 { font-size: 1.0625em; }
             text-decoration: underline;
         }
         transition: none;
+    }
+}
+
+/* Comment module */
+.recent-comments {
+    .user-id {
+        margin-right: .25em;
+        font-weight: bold;
+        img {
+            margin-right: .25em;
+            border-radius: 4px;
+            width: 24px !important;
+            height: 24px !important;
+            vertical-align: middle;
+        }
+    }
+    .recent-comment-time {
+        color: $secondary--light;
+        @media #{$mq-dk} {
+            color: $secondary--dark
+        }
+        font-size: .8rem;
+        white-space: nowrap;
+        opacity: 1;
     }
 }
 
