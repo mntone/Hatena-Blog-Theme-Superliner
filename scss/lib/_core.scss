@@ -626,6 +626,7 @@ h6 { font-size: 1.0625em; }
     box-sizing: border-box;
     margin-bottom: 2rem;
     font-size: .875rem;
+    line-height: 1.5;
     break-inside: avoid-column;
     user-select: none;
 }
@@ -660,9 +661,9 @@ h6 { font-size: 1.0625em; }
         }
         a {
             display: block;
-            margin: -.25em;
+            margin: -.25rem -4px;
             border-radius: 4px;
-            padding: .25em;
+            padding: .25rem 4px;
             text-decoration: none;
             &:hover {
                 background-color: $border-bottom--light;
