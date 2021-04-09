@@ -535,7 +535,7 @@ h6 { font-size: 1.0625em; }
         position: relative;
         margin: 1rem 0;
         border-radius: 4px;
-        padding: 1rem 1rem 1rem calc(48px + 1.75rem);
+        padding: 1rem 1rem 1rem 4.75rem;
         background-color: $secondary-background--light;
         @media #{$mq-dk} {
             background-color: $secondary-background--dark;
@@ -547,8 +547,8 @@ h6 { font-size: 1.0625em; }
         top: 1rem;
         left: 1rem;
         border-radius: 4px;
-        width: 48px !important;
-        height: 48px !important;
+        width: 3rem !important;
+        height: 3rem !important;
     }
 }
 .comment {
@@ -734,8 +734,8 @@ h6 { font-size: 1.0625em; }
         img {
             margin-right: .25em;
             border-radius: 4px;
-            width: 24px !important;
-            height: 24px !important;
+            width: 1.5rem !important;
+            height: 1.5rem !important;
             vertical-align: middle;
         }
     }
@@ -756,8 +756,8 @@ h6 { font-size: 1.0625em; }
         float: left;
         margin: 0 .75rem .75rem 0;
         border-radius: 4px;
-        width: 48px !important;
-        height: 48px !important;
+        width: 3rem !important;
+        height: 3rem !important;
     }
     .id {
         display: block;
