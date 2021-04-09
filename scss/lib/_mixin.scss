@@ -1,5 +1,13 @@
 // Mix-ins
 
+@mixin clearfix {
+    &::after {
+        clear: both;
+        display: block;
+        content: "";
+    }
+}
+
 @mixin header {
     border-top: 1px solid $border-top--light;
     border-bottom: 1px solid $border-bottom--light;

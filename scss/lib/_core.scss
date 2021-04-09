@@ -295,11 +295,7 @@ h6 { font-size: 1.0625em; }
         }
         user-select: none;
     }
-    &::after {
-        clear: both;
-        display: block;
-        content: "";
-    }
+    @include clearfix();
 }
 .entry-see-more {
     display: inline-block;
@@ -603,10 +599,20 @@ h6 { font-size: 1.0625em; }
 
 /* Pager */
 .pager {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 0;
+    margin: 1rem 0 .5rem;
+    font-size: .875rem;
+    line-height: 1;
+    @include clearfix();
 }
+.pager-prev a,
+.pager-next a {
+    display: inline-block;
+    margin-bottom: .5rem;
+    @include button();
+    text-decoration: none;
+}
+.pager-prev { clear: left; float: left; }
+.pager-next { clear: right; float: right; }
 
 /* サイドバーモジュール */
 .hatena-module {
