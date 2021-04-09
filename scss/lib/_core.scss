@@ -21,6 +21,13 @@ body {
     background-color: $selection;
 }
 
+::placeholder {
+    color: $secondary--light;
+    @media #{$mq-dk} {
+        color: $secondary--dark;
+    }
+}
+
 a {
     color: $link--light;
     &:hover {
@@ -811,6 +818,9 @@ h6 { font-size: 1.0625em; }
     color: $text--light;
     @media #{$mq-dk} {
         color: $text--dark;
+    }
+    &:-ms-input-placeholder {
+        color: $secondary--light;
     }
     background: none;
     height: 1.25rem;
