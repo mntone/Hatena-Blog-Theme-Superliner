@@ -17,6 +17,10 @@ body {
     }
 }
 
+::selection {
+    background-color: $selection;
+}
+
 a {
     color: $link--light;
     &:hover {
