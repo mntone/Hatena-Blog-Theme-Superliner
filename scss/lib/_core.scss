@@ -89,7 +89,7 @@ h6 { font-size: 1.0625em; }
     @media #{$mq-md} {
         padding: 0 32px 0 30px;
         width: calc(100% - 62px);
-        max-width: 1198px;
+        max-width: 1178px;
     }
     color: $text--light;
     background-color: $background--light;
@@ -109,7 +109,7 @@ h6 { font-size: 1.0625em; }
     }
     @media #{$mq-md} {
         width: calc(100% - 80px);
-        max-width: 1180px;
+        max-width: 1160px;
     }
 }
 
@@ -132,7 +132,7 @@ h6 { font-size: 1.0625em; }
         width: calc(100% - 280px);
     }
     @media #{$mq-lg} {
-        width: 820px;
+        width: 800px;
     }
 }
 #box2 {
@@ -142,7 +142,7 @@ h6 { font-size: 1.0625em; }
         width: 220px;
     }
     @media #{$mq-lg} {
-        width: calc(100% - 880px);
+        width: calc(100% - 860px);
     }
 }
 #box2-inner {
