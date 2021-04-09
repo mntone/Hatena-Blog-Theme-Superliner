@@ -235,10 +235,10 @@ h6 { font-size: 1.0625em; }
 /* entry */
 .entry {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 48px;
 }
 .entry-header {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     @include header;
 
     .social-buttons {
