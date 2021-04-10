@@ -531,31 +531,63 @@ h6 { font-size: 1.0625em; }
 .quote-box {
     contain: strict;
     width: 2em;
-    height: 7em;
+    height: 6.5em;
+    font-size: 1.125em;
 }
 .tooltip-quote {
-    margin-bottom: .5em;
+    box-sizing: border-box;
+    margin-bottom: .25em;
+    border: 1px solid $separator--light;
     width: 2em;
     height: 2em;
-    background-color: $tooltip-background--light;
+    background-color: $blur-background--extra-light;
     &:hover {
-        background-color: $tooltip-background-hover--light;
+        background-color: $blur-background--extra-light;
     }
+    opacity: 1;
+    backdrop-filter: blur(10px);
     i {
-        color: $text--dark;
+        color: $text--light;
         font-size: 1em;
         line-height: 2;
     }
-
-    @media #{$mq-dk} {
-        background-color: $tooltip-background--dark;
-        &:hover {
-            background-color: $tooltip-background-hover--dark;
-        }
+    @supports (-webkit-text-stroke: 1px $text--light) {
         i {
-            color: $text--light;
+            color: transparent;
+            -webkit-text-stroke: 1px $text--light;
+        }
+        &:hover i {
+            -webkit-text-stroke: 1px currentColor;
         }
     }
+
+    @media #{$mq-dk} {
+        border-color: $separator--dark;
+        background-color: $blur-background--dark;
+        &:hover {
+            background-color: $blur-background--dark;
+        }
+        i {
+            color: $text--dark;
+        }
+        @supports (-webkit-text-stroke: 1px $text--dark) {
+            i {
+                color: transparent;
+                -webkit-text-stroke: 1px $text--dark;
+            }
+            &:hover i {
+                -webkit-text-stroke: 1px currentColor;
+            }
+        }
+    }
+}
+.tooltip-quote-star:hover i { color: #ffb638; }
+.tooltip-quote-stock:hover i { color: #84e60e; }
+.tooltip-quote-tweet:hover i { color: #1da1f2; }
+@media #{$mq-dk} {
+    .tooltip-quote-star:hover i { color: #ffc96b; }
+    .tooltip-quote-stock:hover i { color: #b5f665; }
+    .tooltip-quote-tweet:hover i { color: #8fcef5; }
 }
 
 /* コメント */

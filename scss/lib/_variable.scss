@@ -5,8 +5,6 @@ $background--light: #fff;
 $background--dark: #000;
 $secondary-background--light: #f2f2f7;
 $secondary-background--dark: #1c1c1e;
-$blur-background--light: rgba(247, 247, 247, .82);
-$blur-background--dark: #000;
 $blur-opaque-background--light: rgba(247, 247, 247, .95);
 $blur-opaque-background--dark: #000;
 $bg-light: #f5f5f5;
@@ -26,6 +24,11 @@ $selection: rgba(120, 120, 128, .33);
 $link--light: #1488cc;
 $link--dark: #42adec;
 $hover: darken($link--light, 10%);
+
+// blur
+$blur-background--light: rgba(255, 255, 255, .3);
+$blur-background--extra-light: rgba(247, 247, 247, .82);
+$blur-background--dark: rgba(28, 28, 28, .73);
 
 // tooltip
 $tooltip-background--light: rgba(0, 0, 0, .6);
