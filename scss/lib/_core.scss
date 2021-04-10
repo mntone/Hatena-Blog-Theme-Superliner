@@ -226,6 +226,11 @@ h6 { font-size: 1.0625em; }
 
 /* パンくず（カテゴリー、記事ページで表示されます） */
 .breadcrumb {
+    margin: 1rem 16px;
+    @media #{$mq-sm} {
+        margin-left: 0;
+        margin-right: 0;
+    }
     font-size: .875rem;
 }
 
@@ -871,7 +876,16 @@ h6 { font-size: 1.0625em; }
 
 /* Archive */
 .archive-header-category {
-    text-align: center;
+    margin-bottom: 0;
+}
+.archive-heading, .archive-header-category .archive-heading {
+    margin: 0;
+    border-top: 1px solid $border-top--light;
+    @media #{$mq-dk} {
+        border-top-color: $border-top--dark;
+    }
+    padding: .667em 0;
+    font-size: 1.25rem;
 }
 .archive-entry {
     margin-bottom: 1rem;
@@ -887,10 +901,16 @@ h6 { font-size: 1.0625em; }
         border-bottom-color: $separator--dark;
     }
 }
+.archive-date {
+    font-size: 0.75rem;
+}
 .archive-entry-body {
     margin-top: 1rem;
 }
 .page-archive {
+    .entry-title {
+        font-size: 1.125rem;
+    }
     .entry-thumb {
         float: right;
         margin: 1rem 0 .5rem 1rem;
