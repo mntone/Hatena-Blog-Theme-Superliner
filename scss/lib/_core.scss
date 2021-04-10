@@ -527,13 +527,23 @@ h6 { font-size: 1.0625em; }
 }
 
 /* tooltip */
+.quote-box {
+    contain: strict;
+    width: 2em;
+    height: 7em;
+}
 .tooltip-quote {
+    margin-bottom: .5em;
+    width: 2em;
+    height: 2em;
     background-color: $tooltip-background--light;
     &:hover {
         background-color: $tooltip-background-hover--light;
     }
     i {
         color: $text--dark;
+        font-size: 1em;
+        line-height: 2;
     }
 
     @media #{$mq-dk} {
