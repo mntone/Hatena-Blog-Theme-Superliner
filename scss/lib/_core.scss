@@ -129,7 +129,7 @@ h6 { font-size: 1.0625em; }
         flex-direction: row;
     }
 }
-#wrapper {
+#blog-title, #wrapper {
     margin: 0 16px;
     @media #{$mq-sm} {
         margin: 0;
@@ -869,6 +869,22 @@ h6 { font-size: 1.0625em; }
 }
 
 /* Search module */
+.hatena-module-search-box {
+    @media #{$mq-sm} {
+        position: absolute;
+        top: calc(77px + .55rem);
+        margin-bottom: 0;
+        padding-top: 4px;
+        width: 228px;
+        .hatena-module-title {
+            display: none;
+        }
+    }
+    @media #{$mq-lg} {
+        width: calc(100% - 932px);
+        max-width: 308px;
+    }
+}
 .search-form {
     display: flex;
     box-sizing: border-box;
