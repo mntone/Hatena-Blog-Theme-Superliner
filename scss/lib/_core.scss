@@ -169,14 +169,15 @@ h6 { font-size: 1.0625em; }
 
 /* ヘッダ */
 #blog-title {
-    margin: 24px 16px;
+    contain: content;
+    margin: 16px;
     @media #{$mq-sm} {
-        margin: 32px 0;
+        margin: 24px 0;
     }
     user-select: none;
 }
 #title {
-    margin: 0;
+    margin: 8px 0 0;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -.02em;
@@ -194,7 +195,7 @@ h6 { font-size: 1.0625em; }
     }
 }
 #blog-description {
-    margin: 14px 0 0;
+    margin: 14px 0 8px;
     color: $secondary--light;
     @media #{$mq-dk} {
         color: $secondary--dark;
