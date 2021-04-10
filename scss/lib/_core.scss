@@ -143,17 +143,18 @@ h6 { font-size: 1.0625em; }
     }
 }
 #box2 {
-    margin: 0 16px;
+    margin: 0 16px 0 12px;
     @media #{$mq-sm} {
         margin: 0;
-        width: 220px;
+        width: 224px;
     }
     @media #{$mq-lg} {
-        width: calc(100% - 860px);
+        width: calc(100% - 856px);
     }
 }
 #box2-inner {
-    column-gap: 16px;
+    margin-right: -4px;
+    column-gap: 8px;
     column-fill: auto;
 }
 @media (min-width: 505px) and (max-width: 740px) {
@@ -693,9 +694,11 @@ h6 { font-size: 1.0625em; }
 
 /* サイドバーモジュール */
 .hatena-module {
+    contain: content;
     box-sizing: border-box;
-    margin-bottom: 2rem;
-    font-size: .875rem;
+    margin-bottom: 1.75em;
+    padding: 0 4px .25em;
+    font-size: .875em;
     line-height: 1.5;
     break-inside: avoid-column;
     user-select: none;
@@ -792,6 +795,12 @@ h6 { font-size: 1.0625em; }
         }
         transition: none;
     }
+}
+
+/* Related module */
+.hatena-module-related-entries {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Archive module */
