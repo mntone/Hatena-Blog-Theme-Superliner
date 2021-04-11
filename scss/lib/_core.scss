@@ -239,6 +239,7 @@ h6 { font-size: 1.0625em; }
 /* ソーシャルボタン */
 .social-buttons {
     display: block;
+    user-select: none;
 }
 .hatena-bookmark-comment-iframe {
     display: block;
