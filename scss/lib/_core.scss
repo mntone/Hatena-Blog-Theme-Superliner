@@ -352,6 +352,11 @@ h6 { font-size: 1.0625em; }
             margin-left: calc((1300px - 100vw) / 2);
             width: calc(100% + ((100vw - 1300px) / 2));
         }
+        blockquote .figure-image,
+        li .figure-image {
+            margin-left: 0;
+            width: auto;
+        }
     }
     h1, h2, h3, h4, h5, h6 {
         font-weight: 300;
