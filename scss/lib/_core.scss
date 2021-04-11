@@ -491,20 +491,27 @@ h6 { font-size: 1.0625em; }
         }
     }
     .table-of-contents {
+        display: table;
         margin: 1em 0;
         border: 1px solid $separator--light;
         @media #{$mq-dk} {
             border-color: $separator--dark;
         }
         border-radius: 4px;
-        padding: 1em 1.25em 1em 2.5em;
-        width: fit-content;
+        padding: 1.5em 1.25em 1em 2.5em;
         font-size: .875em;
         user-select: none;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
         &::before {
             display: block;
+            position: absolute;
             content: "概要";
-            margin: -1.5em 0 .25em -1.5em;
+            margin: -2em 0 .25em -1.5em;
             padding: 0 .375em;
             width: fit-content;
             font-size: 1.25em;
