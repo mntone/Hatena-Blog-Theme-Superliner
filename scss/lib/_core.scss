@@ -175,34 +175,41 @@ h6 { font-size: 1.0625em; }
     @media #{$mq-sm} {
         margin: 24px 0;
     }
+    padding: 4px 0 8px;
     user-select: none;
 }
 #title {
-    margin: 8px 0 0;
+    margin: 0;
     font-size: 1.5em;
     font-weight: 800;
+    line-height: 1;
     letter-spacing: -.02em;
     a {
         color: $text--light;
         background: linear-gradient(to right, #2b32b2, #1488cc);
+        &:hover {
+            background: linear-gradient(to right, darken(#2b32b2, 4%), darken(#1488cc, 10%));
+        }
         @media #{$mq-dk} {
             background: linear-gradient(to right, #555cd6, #42adec);
-            -webkit-background-clip: text;
-            background-clip: text;
+            &:hover {
+                background: linear-gradient(to right, lighten(#555cd6, 8%), lighten(#1488cc, 20%));
+            }
         }
-        -webkit-background-clip: text;
-        background-clip: text;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
         -webkit-text-fill-color: transparent;
     }
 }
 #blog-description {
-    margin: 14px 0 8px;
+    margin: 1.2em 0 0;
     color: $secondary--light;
     @media #{$mq-dk} {
         color: $secondary--dark;
     }
     font-size: .875em;
     font-weight: 400;
+    line-height: 1;
 }
 
 /* ヘッダ画像を設定したとき */
@@ -855,7 +862,7 @@ h6 { font-size: 1.0625em; }
 .hatena-module-search-box {
     @media #{$mq-sm} {
         position: absolute;
-        top: calc(77px + .55rem);
+        top: calc(60px + 1.125rem); // +1px offset
         margin-bottom: 0;
         padding-top: 4px;
         width: 228px;
