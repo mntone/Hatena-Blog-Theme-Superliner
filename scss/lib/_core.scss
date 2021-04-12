@@ -698,8 +698,8 @@ h6 { font-size: 1.0625em; }
 
 /* Pager */
 .pager {
-    margin: 1rem 0 .5rem;
-    font-size: .875rem;
+    margin: .5em 0;
+    font-size: .875em;
     line-height: 1;
     @include clearfix();
 }
@@ -707,11 +707,41 @@ h6 { font-size: 1.0625em; }
 .pager-next a {
     display: inline-block;
     margin-bottom: .5rem;
-    @include button();
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
-.pager-prev { clear: left; float: left; }
-.pager-next { clear: right; float: right; }
+.pager-prev a::before, .pager-next a::after {
+    display: inline-block;
+    font-family: blogicon;
+    font-size: 1rem;
+    line-height: .875rem;
+    vertical-align: middle;
+}
+.pager-arrow {
+    display: none;
+}
+.pager-prev {
+    clear: left;
+    float: left;
+    a {
+        &::before {
+            content: '\f005';
+            margin-right: .5em;
+        }
+    }
+}
+.pager-next {
+    clear: right;
+    float: right;
+    a {
+        &::after {
+            content: '\f006';
+            margin-left: .5em;
+        }
+    }
+}
 
 /* サイドバーモジュール */
 .hatena-module {
