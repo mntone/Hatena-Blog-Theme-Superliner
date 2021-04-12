@@ -250,8 +250,9 @@ h6 { font-size: 1.0625em; }
 }
 .hatena-bookmark-comment-iframe {
     display: block;
-    margin: 0 -8px;
+    margin: -8px;
     width: calc(100% + 16px) !important;
+    user-select: none;
 }
 
 /* entry */
