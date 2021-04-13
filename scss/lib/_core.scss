@@ -700,24 +700,32 @@ h6 { font-size: 1.0625em; }
 .pager {
     margin: .5em 0;
     font-size: .875em;
-    line-height: 1;
     @include clearfix();
+    user-select: none;
 }
-.pager-prev a,
-.pager-next a {
-    display: inline-block;
-    margin-bottom: .5rem;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
+.pager-prev,
+.pager-next {
+    position: relative;
+    display: block;
+    max-width: calc(100% - 1.5em);
+    margin-bottom: .5em;
+    a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .pager-prev a::before, .pager-next a::after {
-    display: inline-block;
+    position: absolute;
+    bottom: 0;
     font-family: blogicon;
     font-size: 1rem;
-    line-height: .875rem;
-    vertical-align: middle;
+    line-height: 1.4;
 }
 .pager-arrow {
     display: none;
@@ -725,20 +733,27 @@ h6 { font-size: 1.0625em; }
 .pager-prev {
     clear: left;
     float: left;
+    margin-right: 1em;
     a {
+        margin-left: 1em;
         &::before {
+            left: 0;
             content: '\f005';
-            margin-right: .5em;
+            margin-right: .25em;
         }
     }
 }
 .pager-next {
     clear: right;
     float: right;
+    margin-left: 1em;
     a {
+        margin-right: 1em;
+        text-align: right;
         &::after {
+            right: .25em;
             content: '\f006';
-            margin-left: .5em;
+            margin-left: .25em;
         }
     }
 }
