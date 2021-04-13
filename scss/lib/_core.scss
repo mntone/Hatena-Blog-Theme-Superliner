@@ -536,12 +536,25 @@ h6 { font-size: 1.0625em; }
     margin: 0 0 1em;
     border: 0 none transparent;
     border-radius: 8px;
-    padding: 16px;
+    padding: 1rem;
     background-color: $secondary-background--light;
     @media #{$mq-dk} {
         background-color: $secondary-background--dark;
     }
     font-size: .9375em;
+    line-height: 1.55;
+    .hatena-asin-detail-image {
+        max-width: 40%;
+        max-height: 10rem;
+        margin-right: 1rem;
+        border-radius: 4px;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 .hatena-asin-detail-info {
     overflow: hidden;
