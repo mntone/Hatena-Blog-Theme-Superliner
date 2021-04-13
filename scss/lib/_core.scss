@@ -524,7 +524,7 @@ h6 { font-size: 1.0625em; }
             padding: 0 .375em;
             width: fit-content;
             font-size: 1.25em;
-            font-weight: bold;
+            font-weight: 700;
             background-color: $background--light;
             @media #{$mq-dk} {
                 background-color: $background--dark;
@@ -658,7 +658,7 @@ h6 { font-size: 1.0625em; }
 }
 .comment-user-name {
     margin: 0 0 .4em 0;
-    font-weight: bold;
+    font-weight: 700;
 }
 .comment-content {
     margin: 0 0 .4em 0;
@@ -773,7 +773,7 @@ h6 { font-size: 1.0625em; }
     margin-bottom: .5rem;
     @include header;
     font-size: .9375rem;
-    font-weight: bold;
+    font-weight: 700;
 
     a {
         color: inherit;
@@ -857,7 +857,7 @@ h6 { font-size: 1.0625em; }
 .recent-comments {
     .user-id {
         margin-right: .25em;
-        font-weight: bold;
+        font-weight: 700;
         img {
             margin-right: .25em;
             border-radius: 4px;
@@ -889,7 +889,7 @@ h6 { font-size: 1.0625em; }
     .id {
         display: block;
         margin: 0 0 .1rem;
-        font-weight: bold;
+        font-weight: 700;
     }
 }
 .profile-activities {
@@ -990,7 +990,7 @@ h6 { font-size: 1.0625em; }
     dt {
         margin-bottom: .5em;
         @include header;
-        font-weight: bold;
+        font-weight: 700;
     }
     dd {
         margin-left: 0;
