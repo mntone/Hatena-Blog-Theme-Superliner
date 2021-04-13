@@ -1085,3 +1085,40 @@ h6 { font-size: 1.0625em; }
 #footer .guest-footer .guest-footer-content h3 {
     margin: 0 0 .5em;
 }
+
+/* 印刷 */
+@page {
+    size: A4;
+    margin: 12.7mm;
+}
+@media print {
+    html, body {
+        font-family: serif;
+    }
+    body {
+        width: 184.5mm;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        & + p {
+            page-break-before: avoid;
+            page-break-inside: avoid;
+        }
+    }
+    blockquote,
+    pre,
+    .hatena-asin-detail,
+    .itunes-embed {
+        page-break-inside: avoid;
+    }
+    #globalheader-container,
+    #box2,
+    .social-buttons,
+    .hatena-bookmark-comment-iframe,
+    .read-more-comments,
+    .leave-comment-title,
+    .pager {
+        display: none;
+    }
+}
