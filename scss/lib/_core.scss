@@ -531,6 +531,9 @@ h6 { font-size: 1.0625em; }
             }
         }
     }
+    *:first-child {
+        margin-top: 0;
+    }
 }
 .hatena-asin-detail, .itunes-embed {
     margin: 0 0 1em;
@@ -997,21 +1000,39 @@ h6 { font-size: 1.0625em; }
 
 /* About ページ */
 .page-about .entry-content {
-    dl {
-        margin: 0;
+    h1, h2 {
+        margin-left: 0;
+        border-left: 0 none transparent;
+        padding-left: 0;
     }
-    dt {
+    h1, dt {
         margin-bottom: .5em;
         @include header;
+        font-size: .9375em;
         font-weight: 700;
+        line-height: 1.5;
+        text-shadow: unset;
+    }
+    h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6 {
+        margin-top: 0;
+    }
+    h2 {
+        text-shadow: 1px 1px 1px $secondary--light;
+        @media #{$mq-dk} {
+            text-shadow: 1px 1px 1px $secondary--dark;
+        }
+    }
+    dl {
+        margin: 0;
     }
     dd {
         margin-left: 0;
         margin-bottom: 2em;
     }
     .profile-icon {
-        width: 32px !important;
-        height: 32px !important;
+        width: 2em !important;
+        height: 2em !important;
+        margin-bottom: .25em;
         border-radius: 4px;
         vertical-align: middle;
     }
