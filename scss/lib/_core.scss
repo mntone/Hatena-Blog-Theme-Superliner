@@ -569,6 +569,7 @@ h6 { font-size: 1.0625em; }
 }
 .hatena-asin-detail-info {
     overflow: hidden;
+    overflow: clip;
     ul {
         margin-left: 0;
     }
@@ -736,6 +737,7 @@ h6 { font-size: 1.0625em; }
     a {
         display: block;
         overflow: hidden;
+        overflow: clip;
         text-overflow: ellipsis;
         white-space: nowrap;
         text-decoration: none;
@@ -988,6 +990,7 @@ h6 { font-size: 1.0625em; }
 }
 .search-module-button {
     overflow: hidden;
+    overflow: clip;
     margin-right: 5px;
     width: 1.5rem;
     height: 1.5rem;
